@@ -4,6 +4,9 @@ namespace SLC_AS_JSTTestScript_1
 	using System.Collections.Generic;
 	using System.Globalization;
 	using System.Text;
+
+	using Empower.Library.Room0;
+
 	using Skyline.DataMiner.Automation;
 	
 	/// <summary>
@@ -18,6 +21,8 @@ namespace SLC_AS_JSTTestScript_1
 		public void Run(IEngine engine)
 		{
 			engine.GenerateInformation("Hello World!");
+			var order = OrderFactory.CreateOrder("Cheeseburger");
+			order.Dispatch("Jan Staelens");
 		}
 	}
 }
