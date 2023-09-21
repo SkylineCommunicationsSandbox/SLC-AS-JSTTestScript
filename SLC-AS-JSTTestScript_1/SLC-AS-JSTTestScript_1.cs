@@ -21,7 +21,7 @@ namespace SLC_AS_JSTTestScript_1
 		public void Run(IEngine engine)
 		{
 			engine.GenerateInformation("Hello World!");
-			var order = OrderFactory.CreateOrder("Cheeseburger");
+			var order = OrderFactory.CreateOrder("JansChange Cheeseburger");
 			order.Dispatch("Jan Staelens");
 		}
 	}
